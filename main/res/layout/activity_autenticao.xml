@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vermelho_escuro"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".activity.AutenticaoActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/logo"
+        tools:ignore="ContentDescription">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_input_text"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/inputSenha"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_input_text"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Logar"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/tipoAcesso"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Cadastre-se"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearTipoUsuario"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:visibility="visible">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Usuario"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/tipoUsuario"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Empresa"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botaoAcessar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:text="Acessar"
+        android:textColor="@color/vermlho_claro"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

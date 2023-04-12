@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuNovoProduto"
+        android:icon="@drawable/baseline_add_circle_24"
+        android:title="Novo Produto"
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menuPedidos"
+        android:icon="@drawable/baseline_assignment_24"
+        android:title="Pedidos"
+        app:showAsAction="always"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menuConfiguracoes"
+        android:title="configurações"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menuSair"
+        android:title="Sair"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText" />
+</menu>

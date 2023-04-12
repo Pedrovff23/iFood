@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NovoProdutoEmpresaActivity">
+
+    <include
+        android:id="@+id/includeToolbar"
+        layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <EditText
+            android:id="@+id/editProdutoNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input_text"
+            android:hint="Nome Produto"
+            android:inputType="text"
+            android:padding="15dp"
+            tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/editProdutoDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input_text"
+            android:hint="Descrição"
+            android:inputType="text"
+            android:padding="15dp"
+            tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/editProdutoPreco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input_text"
+            android:hint="Preço"
+            android:inputType="numberDecimal"
+            android:padding="15dp"
+            tools:ignore="Autofill,HardcodedText,VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/validarDadosProduto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#9E1D1D"
+            android:text="Salvar"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</LinearLayout>
